@@ -1,0 +1,1 @@
+export const BACKEND_URL="https://backend.harsh100045.workers.dev"
