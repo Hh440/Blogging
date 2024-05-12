@@ -56,14 +56,13 @@ blogRouter.post('/', async(c) => {
 		return c.json({ error: "invalid input" });
 	}
 
+    const currentdate= new Date()
+
    const post= await prisma.post.create({
         data:{
             title:body.title,
             content:body.content,
             authorId:userId
-
-
-
         }
     })
 
@@ -116,6 +115,7 @@ blogRouter.post('/', async(c) => {
             content:true,
             title:true,
             id:true,
+            publishedDate:true,
             author:{
                 select:{
                     name:true
@@ -150,6 +150,7 @@ blogRouter.post('/', async(c) => {
             id:true,
             title:true,
             content:true,
+            publishedDate:true,
             author:{
                 select:{
                     name:true

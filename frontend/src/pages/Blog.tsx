@@ -3,6 +3,7 @@ import { useBlog } from "../hooks"
 import { useParams } from "react-router-dom"
 import { Appbar } from "../components/Appbar"
 import { Spinner } from "../components/Spinner"
+import { HomeBar } from "../components/HomeBar"
 
 
 export const Blog=()=>{
@@ -22,7 +23,7 @@ export const Blog=()=>{
             </div>
         </div>
     }
-    return <>
+    return <div>
      <FullBlog blog={blog}/>
-    </>
+    </div>
 }

@@ -1,6 +1,7 @@
 import { Appbar } from "../components/Appbar"
 import { BlogCard } from "../components/BlogCard"
 import { BlogSkeleton } from "../components/BlogSkeleton"
+import { HomeBar } from "../components/HomeBar"
 import { useBlogs } from "../hooks"
 
 
@@ -34,7 +35,7 @@ export const Blogs=()=>{
                             authorName={blog.author.name || "Anonymous"}
                             title={blog.title}
                             content={blog.content}
-                            publishedDate={"2/12/2023"}
+                            publishedDate={blog.publishedDate}
                             />)
                     }
                    

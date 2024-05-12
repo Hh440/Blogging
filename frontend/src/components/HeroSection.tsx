@@ -1,7 +1,7 @@
 
 export const HeroSection = () =>{
     return <div>
-            <div className="max-h-full bg-slate-300">
+            <div className="max-h-full bg-slate-200">
 
                         <div>
                             <div className="text-center font-black non-itallic decoration-8 antialiased text-6xl text-slate-950">

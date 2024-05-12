@@ -9,6 +9,7 @@ import { About } from './pages/About'
 
 
 import './App.css'
+import { Welcome } from './pages/Welcome'
 
 function App() {
   
@@ -18,7 +19,8 @@ function App() {
 
     <BrowserRouter>
     <Routes>
-      <Route path='/'         element={<Home/>}/>
+      <Route path='/'         element={<Welcome/>}/>
+      <Route path='/home'     element={<Home/>}/>
       <Route path='/signup'   element={<Signup/>}/>
       <Route path='/signin'   element={<Signin/>}/>
       <Route path='/blog/:id' element={<Blog/>}/>

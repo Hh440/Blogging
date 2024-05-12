@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { format } from 'date-fns';
 interface BlogCardProps {
     authorName:string,
     title:string,
@@ -13,6 +14,7 @@ export const BlogCard=({
     content,
     publishedDate
 }: BlogCardProps)=>{
+    const formattedDate: string = format(publishedDate, 'yyyy-MM-dd');
     return <Link to={`/blog/${id}`}> 
     <div className="p-4 border-b border-slate-400 pb-4 w-screen max-w-screen-md cursor-pointer">
 
@@ -21,7 +23,7 @@ export const BlogCard=({
           
            <div className="font-extralight pl-2 text-sm flex justify-center flex-col"> {authorName} </div> 
            <div className="flex justify-center flex-col pl-2 flex justify-center flex-col"> <Circle/> </div>
-           <div className="pl-2 font-thin text-slate-500 text-sm flex justify-center flex-col"> {publishedDate} </div>
+           <div className="pl-2 font-thin text-slate-500 text-sm flex justify-center flex-col"> {formattedDate} </div>
         </div>
         <div className="text-xl font-semibold pt-2">
             {title}
