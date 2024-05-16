@@ -25,4 +25,4 @@ To get started with Zenith, follow these steps:
 - Frontend: Deployed on Vercel.
 - Backend: Deployed on Cloudflare.
 
-hlo man
+
