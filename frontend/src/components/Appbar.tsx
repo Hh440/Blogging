@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
-import { Avatar } from "./BlogCard"
 import { ProfileMenu } from "./ProfileMenu"
 
 export const Appbar=()=>{
     return <div className="border-b flex justify-between px-10 py-4 bg-slate-900">
          
-         <div className="flex flex-col justify-center cursor-pointer">
-            <img src="../../img/logo1.png" className=" w-64 h-12"/>
+         <div className="flex  justify-center cursor-pointer items-center">
+          
+            <img src="../../img/lumin_ex.png" alt="Anything" className="absolute w-full h-1/6 object-contain"/>
+            
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lumin</span>
          </div>
 
 
